@@ -1,0 +1,139 @@
+// CSS reset
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+/* --------------------- hero section syling ----------------------- */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(101deg, #ffffff 50%, #f6b400 50.1%);
+}
+
+#hero header {
+    height: 7%;
+    width: 100%;
+}
+
+#hero header nav {
+    padding-top: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-g {
+    width: 20%;
+}
+
+a.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav img {
+    vertical-align: middle;
+}
+
+p.logo-text {
+    display: inline;
+    color: #f6b400;
+    font-weight: 700;
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+p.logo-text .black {
+    color: black;
+}
+
+.links {
+    width: 80%;
+    text-align: right;
+}
+
+.links ul {
+    display: inline;
+}
+
+.links li {
+    list-style-type: none;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0 2%;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 7%;
+}
+
+li a:hover {
+    border-bottom: solid 0.4rem black;
+}
+
+.cart {
+    display: inline;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
+.cart .icon svg {
+    width: 1.5rem;
+}
+
+/*------------------ hero content styling ----------------*/
+.hero-content {
+    display: flex;
+    height: 93%;
+    align-items: center;
+    padding: 3%;
+}
+
+.hero-content-a {
+    padding-bottom: 15%;
+    width: 48%;
+}
+.hero-content-a h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.hero-content-a p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.hero-content button {
+    background-color: #f6b400;
+    margin-top: 15%;
+    margin-left: 7%;
+    padding: 3% 6%;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 5rem 5rem 0 5rem;
+}
+
+.hero-content-b {
+}
+.hero-content-b img {
+    height: 55rem;
+}
