@@ -341,7 +341,7 @@ a:focus {
 #slider {
     background-color: #f7fdf6;
     display: flex;
-    padding: 5%;
+    padding: 10% 6%;
 }
 
 .info {
@@ -406,4 +406,46 @@ a:focus {
 
 .image-slider .back {
     width: 100%;
+}
+
+/* ----------------- call to action section styling --------------*/
+#cta {
+    background-color: #f6b400;
+    display: flex;
+    padding: 10% 6%;
+}
+#cta .platform {
+    padding: 5% 5% 5% 3%;
+    width: 50%;
+}
+
+#cta .platform h3 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#cta .platform .apple-android {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#cta .platform .apple-android img {
+    width: 40%;
+    padding: 0 2%;
+    cursor: pointer;
+}
+
+#cta .mobile-mockups {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cta .mobile-mockups img {
+    background-color: #fff;
+    width: 40%;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
