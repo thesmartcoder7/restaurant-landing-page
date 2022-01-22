@@ -412,11 +412,11 @@ a:focus {
 }
 #cta .platform {
     padding: 5% 5% 5% 0;
-    width: 40%;
+    width: 45%;
 }
 
 #cta .platform h3 {
-    font-size: 4rem;
+    font-size: 3.5vw;
     font-weight: 700;
 }
 
@@ -427,7 +427,8 @@ a:focus {
 
 #cta .platform .apple-android img {
     width: 45%;
-    padding: 0 2%;
+    padding: 0 3%;
+    margin-left: -3%;
     cursor: pointer;
 }
 
@@ -441,10 +442,10 @@ a:focus {
     background-color: #fff;
     /* width: 20vw; */
     height: 70vh;
-    border-radius: 3rem;
+    border-radius: 2.8vw;
     border: none;
     outline: none;
-    box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: -1vw 1vw 1vw rgba(0, 0, 0, 0.2);
 }
 
 /* ----------------- 2nd call to action section styling --------------*/
