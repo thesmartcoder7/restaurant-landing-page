@@ -276,6 +276,7 @@ a:focus {
     overflow: hidden;
 }
 .card .ribbon {
+    font-weight: bold;
     width: 50%;
     padding: 2% 5%;
     text-align: center;
@@ -448,4 +449,73 @@ a:focus {
     border: none;
     outline: none;
     box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* ----------------- 2nd call to action section styling --------------*/
+#cta_1 {
+    background-color: #f7fdf6;
+    display: flex;
+    padding: 5% 6%;
+    justify-content: space-between;
+}
+
+#cta_1 .footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+#cta_1 .footer-logo .logo-link {
+    display: flex;
+    align-items: center;
+}
+.sitemap {
+    text-align: left;
+}
+.sitemap h3 {
+    font-size: 2.3rem;
+}
+
+.sitemap ul {
+    margin-top: -20%;
+}
+
+.sitemap ul li {
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5% 0;
+    text-align: left;
+}
+
+.sitemap ul li a:hover,
+a:active,
+a:focus {
+    border: none;
+    color: #ff6d20;
+}
+
+.newsletter {
+    font-size: 2.3rem;
+}
+
+form div {
+    display: flex;
+}
+
+form .form-field {
+    padding: 3% 6% 3% 3%;
+    border: solid 0.1rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+form .form-button {
+    background-color: #f6b400;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 2.8% 6%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 0 0.5rem 0.5rem 0;
 }
