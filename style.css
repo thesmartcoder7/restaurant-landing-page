@@ -222,3 +222,109 @@ a:focus {
     font-size: 1.1rem;
     line-height: 2rem;
 }
+
+/* ----------------- menu section styling --------------*/
+#menu {
+    padding: 5%;
+}
+
+.cards {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#menu .title {
+    text-align: center;
+}
+
+#menu .title h3 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: #f6b400;
+}
+
+#menu .title h3 span {
+    color: black;
+}
+
+#menu hr {
+    background-color: #fa9529;
+    border: none;
+    outline: none;
+    margin-top: -1.5%;
+    width: 5%;
+    height: 0.7rem;
+}
+
+.card {
+    width: 25%;
+    height: auto;
+    position: relative;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
+    padding: 3%;
+    margin-top: 5%;
+    text-align: center;
+    overflow: hidden;
+}
+.card .ribbon {
+    width: 50%;
+    padding: 2% 5%;
+    text-align: center;
+    transform: rotate(40deg);
+    text-transform: capitalize;
+    background-color: #ff6d21;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 40%;
+    color: #fff;
+}
+
+.card img {
+    width: 80%;
+}
+
+.card h3 {
+    text-transform: uppercase;
+    color: #550312;
+    font-size: 2.5rem;
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.card div {
+    padding: 7% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card div .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 2%;
+}
+
+.card div .icon {
+    font-size: 1rem;
+    background-color: #e1ebe6;
+    padding: 1% 7%;
+    border-radius: 1rem;
+}
+
+.card div .add-to-cart {
+    font-size: 1.5rem;
+    background-color: #e1ebe6;
+    padding: 4% 7%;
+    border-radius: 1rem;
+    color: #5d9676;
+}
+
+.card div .add-to-cart .quantity {
+    color: #000;
+}
