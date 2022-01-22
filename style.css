@@ -184,7 +184,7 @@ a:focus {
 .delivery {
     text-align: center;
     border: solid 0.15vw #550312;
-    border-radius: 20px;
+    border-radius: 1vw;
     padding: 9% 5% 5% 5%;
     margin: 0 2%;
     height: auto;
@@ -194,7 +194,7 @@ a:focus {
 .tasty {
     text-align: center;
     border: solid 0.15vw #550312;
-    border-radius: 20px;
+    border-radius: 1vw;
     padding: 5% 3%;
     margin: 4% 2%;
     height: auto;
@@ -242,7 +242,7 @@ a:focus {
 
 #menu .title h3 {
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     color: #f6b400;
 }
 
@@ -254,17 +254,17 @@ a:focus {
     background-color: #fa9529;
     border: none;
     outline: none;
-    margin-top: -1.5%;
-    width: 5%;
-    height: 0.7rem;
+    margin-top: -2%;
+    width: 8%;
+    height: 0.7vw;
 }
 
 .card {
     width: 25%;
     height: auto;
     position: relative;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    border-radius: 3rem;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+    border-radius: 3vw;
     padding: 3%;
     margin-top: 5%;
     text-align: center;
@@ -291,12 +291,12 @@ a:focus {
 .card h3 {
     text-transform: uppercase;
     color: #550312;
-    font-size: 2.5rem;
+    font-size: 2vw;
 }
 
 .card p {
-    font-size: 1.1rem;
-    line-height: 2rem;
+    font-size: 1vw;
+    line-height: 1.8vw;
 }
 
 .card div {
@@ -307,24 +307,24 @@ a:focus {
 }
 
 .card div .price {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: 700;
     padding-left: 2%;
 }
 
 .card div .icon {
-    font-size: 1rem;
+    font-size: 1vw;
     background-color: #e1ebe6;
     padding: 1% 7%;
-    border-radius: 1rem;
+    border-radius: 1vw;
 }
 
 .card div .add-to-cart {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: 500;
     background-color: #e1ebe6;
     padding: 4% 7%;
-    border-radius: 1rem;
+    border-radius: 1vw;
     color: #5d9676;
 }
 
