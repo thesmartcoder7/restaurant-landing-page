@@ -135,15 +135,16 @@ a:focus {
     line-height: 6rem;
 }
 
-.hero-content-a p {
+.hero-content-a h2 {
     margin-top: 7%;
     font-size: 2rem;
     line-height: 3rem;
+    font-weight: 400;
 }
 
 .hero-content button {
     cursor: pointer;
-    background-color: #f6b400;
+    background-color: #fa9529;
     margin-top: 15%;
     margin-left: 7%;
     padding: 3% 6%;
@@ -156,4 +157,65 @@ a:focus {
 .hero-content-b img {
     height: 55rem;
     margin-top: -20%;
+}
+
+/* ----------------- services section styling --------------*/
+#services {
+    display: flex;
+    padding: 5%;
+    align-items: top;
+    justify-content: center;
+}
+
+.delivery {
+    text-align: center;
+    border: solid 0.15rem #550312;
+    border-radius: 20px;
+    padding: 9% 5% 5% 5%;
+    margin: 0 2%;
+    height: 45vh;
+    width: 40%;
+}
+.quality,
+.tasty {
+    text-align: center;
+    border: solid 0.15rem #550312;
+    border-radius: 20px;
+    padding: 5% 3%;
+    margin: 4% 2%;
+    height: 35vh;
+    width: 30%;
+}
+
+.quality svg {
+    width: 7rem;
+    height: 7rem;
+    color: #f6b400;
+}
+
+.delivery svg {
+    width: 7rem;
+    height: 7rem;
+    color: #f6b400;
+}
+
+.tasty svg {
+    width: 7rem;
+    height: 7rem;
+    color: #f6b400;
+}
+
+.quality h3,
+.delivery h3,
+.tasty h3 {
+    color: #550312;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.quality p,
+.delivery p,
+.tasty p {
+    font-size: 1.1rem;
+    line-height: 2rem;
 }
