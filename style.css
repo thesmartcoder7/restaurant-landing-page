@@ -55,7 +55,7 @@ p.logo-text {
     font-weight: 800;
     font-size: 3rem;
     vertical-align: middle;
-    font-family: "Sansita Swashed", cursive;
+    font-family: "Sansita Swashed";
 }
 
 p.logo-text .black {
@@ -90,7 +90,14 @@ li a {
 li a:hover,
 a:active,
 a:focus {
-    border-bottom: solid 0.4rem #ff6d20;
+    border-bottom: solid 0.5rem #ff6d20;
+}
+
+.logo-link a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    border-bottom: none;
 }
 
 .cart {
@@ -98,7 +105,6 @@ a:focus {
     background-color: transparent;
     border: none;
     outline: none;
-    height: vh;
     margin-left: 20%;
     margin-right: 5%;
 }
@@ -166,7 +172,7 @@ a:focus {
     background-color: #f7fdf6;
     display: flex;
     padding: 10% 5%;
-    align-items: top;
+
     justify-content: center;
 }
 
@@ -319,6 +325,7 @@ a:focus {
 
 .card div .add-to-cart {
     font-size: 1.5rem;
+    font-weight: 500;
     background-color: #e1ebe6;
     padding: 4% 7%;
     border-radius: 1rem;
@@ -327,4 +334,76 @@ a:focus {
 
 .card div .add-to-cart .quantity {
     color: #000;
+    font-weight: 700;
+}
+
+/* ----------------- slider section styling --------------*/
+#slider {
+    background-color: #f7fdf6;
+    display: flex;
+    padding: 5%;
+}
+
+.info {
+    width: 50%;
+}
+
+.info h3 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #f6b400;
+}
+
+.info h3 .black {
+    color: black;
+}
+
+.info p {
+    color: #615757;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.info .controls {
+    display: flex;
+    align-items: center;
+    font-size: 7rem;
+    color: #c4c4c4;
+    align-self: center;
+}
+
+.info .controls .first {
+    color: #ff6d21;
+    padding: 2%;
+}
+
+.info .controls .second,
+.info .controls .third {
+    padding: 2%;
+}
+
+.info .controls .arrow {
+    color: #fa9529;
+    font-size: 7rem;
+    padding-left: 5%;
+    transform: rotate(-45deg);
+    margin-top: 3%;
+}
+
+.image-slider {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.image-slider .front {
+    width: 70%;
+    position: absolute;
+    margin-bottom: -10%;
+}
+
+.image-slider .back {
+    width: 100%;
 }
