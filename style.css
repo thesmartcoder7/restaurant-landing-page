@@ -13,6 +13,7 @@ html {
 
 body {
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 /* --------------------- hero section syling ----------------------- */
@@ -24,12 +25,11 @@ body {
 
 #hero header {
     height: 7%;
-    width: 100%;
+    padding: 1% 2%;
 }
 
 #hero header nav {
     padding-top: 1%;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -63,6 +63,7 @@ p.logo-text .black {
 
 .links {
     width: 80%;
+    height: 100%;
     text-align: right;
 }
 
@@ -85,18 +86,34 @@ li a {
     padding-bottom: 7%;
 }
 
-li a:hover {
-    border-bottom: solid 0.4rem black;
+li a:hover,
+a:active,
+a:focus {
+    border-bottom: solid 0.4rem #ff6d20;
 }
 
 .cart {
-    display: inline;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: vh;
     margin-left: 20%;
     margin-right: 5%;
 }
 
 .cart .icon svg {
-    width: 1.5rem;
+    width: 1.6rem;
+}
+
+.badge {
+    background-color: #ff6d20;
+    position: absolute;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    top: -40%;
+    right: -20%;
 }
 
 /*------------------ hero content styling ----------------*/
@@ -108,20 +125,24 @@ li a:hover {
 }
 
 .hero-content-a {
-    padding-bottom: 15%;
+    padding-bottom: 5%;
     width: 48%;
 }
 .hero-content-a h1 {
     font-size: 5rem;
     font-weight: 700;
+    margin: 0;
+    line-height: 6rem;
 }
 
 .hero-content-a p {
+    margin-top: 7%;
     font-size: 2rem;
     line-height: 3rem;
 }
 
 .hero-content button {
+    cursor: pointer;
     background-color: #f6b400;
     margin-top: 15%;
     margin-left: 7%;
@@ -132,8 +153,7 @@ li a:hover {
     border-radius: 5rem 5rem 0 5rem;
 }
 
-.hero-content-b {
-}
 .hero-content-b img {
     height: 55rem;
+    margin-top: -20%;
 }
