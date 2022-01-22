@@ -19,7 +19,7 @@ body {
 /* --------------------- hero section syling ----------------------- */
 #hero {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(101deg, #ffffff 50%, #f6b400 50.1%);
 }
 
@@ -47,6 +47,7 @@ a.logo-link {
 
 nav img {
     vertical-align: middle;
+    width: 5vw;
 }
 
 p.logo-text {
@@ -126,9 +127,9 @@ a:focus {
 /*------------------ hero content styling ----------------*/
 .hero-content {
     display: flex;
-    height: 93%;
+    height: auto;
     align-items: center;
-    padding: 3%;
+    padding: 10% 0 3% 0;
 }
 
 .hero-content-a {
@@ -468,6 +469,10 @@ a:focus {
     display: flex;
     align-items: center;
 }
+#cta_1 .footer-logo .logo-link img {
+    width: 5vw;
+}
+
 .sitemap {
     text-align: left;
 }
@@ -505,6 +510,7 @@ form .form-field {
     padding: 3% 6% 3% 3%;
     border: solid 0.1vw rgba(0, 0, 0, 0.3);
     border-radius: 0.5vw 0 0 0.5vw;
+    font-size: 1vw;
 }
 
 form .form-button {
@@ -542,7 +548,7 @@ footer span {
 .social-icons svg {
     margin: 0 2%;
     cursor: pointer;
-    width: 1.2vw;
+    width: 1.5vw;
 }
 
 .social-icons svg:hover {
