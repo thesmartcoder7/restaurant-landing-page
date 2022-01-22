@@ -345,7 +345,7 @@ a:focus {
 }
 
 .info h3 {
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: 900;
     text-transform: capitalize;
     color: #f6b400;
@@ -357,14 +357,14 @@ a:focus {
 
 .info p {
     color: #615757;
-    font-size: 1.7rem;
+    font-size: 1.7vw;
     font-weight: 500;
 }
 
 .info .controls {
     display: flex;
     align-items: center;
-    font-size: 7rem;
+    font-size: 6vw;
     color: #c4c4c4;
     align-self: center;
 }
@@ -381,7 +381,7 @@ a:focus {
 
 .info .controls .arrow {
     color: #fa9529;
-    font-size: 7rem;
+    font-size: 6vw;
     padding-left: 5%;
     transform: rotate(-45deg);
     margin-top: 3%;
