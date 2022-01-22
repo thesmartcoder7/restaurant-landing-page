@@ -52,9 +52,10 @@ nav img {
 p.logo-text {
     display: inline;
     color: #f6b400;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 3rem;
     vertical-align: middle;
+    font-family: "Sansita Swashed", cursive;
 }
 
 p.logo-text .black {
@@ -139,7 +140,8 @@ a:focus {
     margin-top: 7%;
     font-size: 2rem;
     line-height: 3rem;
-    font-weight: 400;
+    font-weight: 500;
+    color: #615757;
 }
 
 .hero-content button {
@@ -161,8 +163,9 @@ a:focus {
 
 /* ----------------- services section styling --------------*/
 #services {
+    background-color: #f7fdf6;
     display: flex;
-    padding: 5%;
+    padding: 10% 5%;
     align-items: top;
     justify-content: center;
 }
