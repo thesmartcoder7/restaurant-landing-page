@@ -129,7 +129,7 @@ a:focus {
     display: flex;
     height: auto;
     align-items: center;
-    padding: 10% 0 3% 0;
+    padding: 12% 0 5% 0;
 }
 
 .hero-content-a {
@@ -137,6 +137,7 @@ a:focus {
     padding-left: 4%;
     width: 44%;
 }
+
 .hero-content-a h1 {
     font-size: 4vw;
     font-weight: 700;
@@ -165,13 +166,14 @@ a:focus {
 }
 
 .hero-content-b {
-    width: 56;
+    width: 56%;
 }
 
 .hero-content-b img {
     width: 30vw;
     height: auto;
     margin-top: -20%;
+    margin-left: 5%;
 }
 
 /* ----------------- services section styling --------------*/
