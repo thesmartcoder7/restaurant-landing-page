@@ -194,6 +194,7 @@ a:focus {
 .badge {
     background-color: #ff6d20;
     position: absolute;
+    font-size: 0.8vw;
     color: #fff;
     border-radius: 50%;
     padding: 0.3vw 0.6vw;
@@ -209,11 +210,11 @@ a:focus {
         background-color: #ff6d20;
         position: absolute;
         color: #fff;
-        font-size: 3vw;
+        font-size: 4vw;
         border-radius: 50%;
-        padding: 0.3vw 0.6vw;
-        top: -40%;
-        right: -25%;
+        padding: 1.5vw 2.5vw;
+        top: 0;
+        right: 42%;
     }
 }
 
