@@ -44,7 +44,7 @@ Happy coding!
 ---
 
 ## Author Info
-
+Name: Samuel Martins
 -   Twitter - [@thesmartcoder7](https://twitter.com/thesmartcoder7)
 -   Linkedin - [Samuel Martins](https://www.linkedin.com/in/samuel-martins-09839b115/)
 -   Website - [Samuel Martins](https://smart-code.dev)
