@@ -3,12 +3,11 @@
 *:before,
 *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: "Poppins", sans-serif;
 }
 
@@ -33,8 +32,7 @@ body {
 @media screen and (max-width: 500px) {
     #hero header {
         height: 7%;
-        padding: 0 3%;
-        margin-top: 0;
+        padding: 5% 3%;
     }
 }
 
@@ -224,9 +222,9 @@ a:focus {
 }
 
 @media screen and (max-width: 500px) {
-    header {
+    /* header {
         padding-top: 10%;
-    }
+    } */
 
     label {
         display: flex;
@@ -424,15 +422,17 @@ a:focus {
 
 #menu hr {
     background-color: #fa9529;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     outline: none;
-    margin-top: -2%;
+    margin-top: 2%;
     width: 8%;
     height: 0.7vw;
 }
 
 .card {
-    width: 25%;
+    width: 30%;
     height: auto;
     position: relative;
     box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
@@ -452,8 +452,8 @@ a:focus {
     text-transform: capitalize;
     background-color: #ff6d21;
     position: absolute;
-    margin-top: -2%;
-    margin-left: 40%;
+    margin-top: -3%;
+    margin-left: 48%;
     color: #fff;
 }
 
@@ -487,9 +487,9 @@ a:focus {
 }
 
 .card div .icon {
-    width: 3vw;
+    width: 5.5vw;
     background-color: #e1ebe6;
-    padding: 1% 7%;
+    padding: 1.5% 7%;
     border-radius: 1vw;
 }
 
@@ -652,7 +652,7 @@ a:focus {
 }
 
 .sitemap ul {
-    margin-top: -20%;
+    margin-top: 2%;
 }
 
 .sitemap ul li {
@@ -661,7 +661,7 @@ a:focus {
     font-size: 1vw;
     font-weight: normal;
     padding: 5% 0;
-    text-align: left;
+    text-align: center;
 }
 
 .sitemap ul li a:hover {
@@ -675,6 +675,10 @@ a:focus {
 
 form div {
     display: flex;
+}
+
+form h3 {
+    margin-bottom: 5%;
 }
 
 form .form-field {
