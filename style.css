@@ -1,4 +1,3 @@
-
 *,
 *:before,
 *:after {
@@ -18,22 +17,9 @@ body {
     background-image: linear-gradient(101deg, #ffffff 50%, #f6b400 50.1%);
 }
 
-@media screen and (max-width: 500px) {
-    #hero {
-        background-image: linear-gradient(280deg, #f6b400 39%, #ffffff 39.2%);
-    }
-}
-
 #hero header {
     height: 7%;
     padding: 1% 2%;
-}
-
-@media screen and (max-width: 500px) {
-    #hero header {
-        height: 7%;
-        padding: 5% 3%;
-    }
 }
 
 #hero header nav {
@@ -48,12 +34,6 @@ body {
     width: 20%;
 }
 
-@media screen and (max-width: 500px) {
-    .logo-g {
-        width: 50%;
-    }
-}
-
 a.logo-link {
     text-decoration: none;
     display: inline-block;
@@ -64,13 +44,6 @@ nav img {
     width: 5vw;
 }
 
-@media screen and (max-width: 500px) {
-    nav img {
-        vertical-align: middle;
-        width: 12vw;
-    }
-}
-
 p.logo-text {
     display: inline;
     color: #f6b400;
@@ -78,12 +51,6 @@ p.logo-text {
     font-size: 2.7vw;
     vertical-align: middle;
     font-family: "Sansita Swashed";
-}
-
-@media screen and (max-width: 500px) {
-    p.logo-text {
-        font-size: 6vw;
-    }
 }
 
 p.logo-text .black {
@@ -96,35 +63,8 @@ p.logo-text .black {
     text-align: right;
 }
 
-@media screen and (max-width: 500px) {
-    .links {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: fixed;
-        background-color: #f6b400;
-        z-index: 2;
-        top: 0.05%;
-        right: -100%;
-        text-align: center;
-        transition: 0.5s ease;
-    }
-
-    #check:checked ~ .links {
-        right: 0.1%;
-    }
-}
-
 .links ul {
     display: inline;
-}
-
-@media screen and (max-width: 500px) {
-    .links ul {
-        padding-left: 0;
-    }
 }
 
 .links li {
@@ -134,17 +74,6 @@ p.logo-text .black {
     font-size: 1.3vw;
     text-transform: capitalize;
     margin: 0 2%;
-}
-
-@media screen and (max-width: 500px) {
-    .links li {
-        list-style-type: none;
-        display: block;
-        font-weight: 700;
-        font-size: 6vw;
-        text-transform: capitalize;
-        margin: 15% 0;
-    }
 }
 
 li a {
@@ -175,13 +104,6 @@ a:focus {
     margin-right: 5%;
 }
 
-@media screen and (max-width: 500px) {
-    .cart {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
 .cart .icon svg {
     width: 1.5vw;
 }
@@ -197,46 +119,12 @@ a:focus {
     right: -25%;
 }
 
-@media screen and (max-width: 500px) {
-    .cart .icon svg {
-        width: 10vw;
-    }
-    .badge {
-        background-color: #ff6d20;
-        position: absolute;
-        color: #fff;
-        font-size: 4vw;
-        border-radius: 50%;
-        padding: 1.5vw 2.5vw;
-        top: 0;
-        right: 42%;
-    }
-}
-
 #check {
     display: none;
 }
 
 .menu-toggle svg {
     display: none;
-}
-
-@media screen and (max-width: 500px) {
-    /* header {
-        padding-top: 10%;
-    } */
-
-    label {
-        display: flex;
-    }
-
-    .menu-toggle svg {
-        /* position: relative; */
-        z-index: 5;
-        display: inline;
-        margin-left: 35vw;
-        width: 9vw;
-    }
 }
 
 /*------------------ hero content styling ----------------*/
@@ -254,27 +142,11 @@ a:focus {
     width: 44%;
 }
 
-@media screen and (max-width: 500px) {
-    .hero-content-a {
-        width: 55%;
-        padding-left: 9%;
-    }
-}
-
 .hero-content-a h1 {
     font-size: 4vw;
     font-weight: 700;
     margin: 0;
     line-height: 4.5vw;
-}
-
-@media screen and (max-width: 500px) {
-    .hero-content-a h1 {
-        font-size: 7vw;
-        font-weight: 700;
-        margin: 0;
-        line-height: 10vw;
-    }
 }
 
 .hero-content-a h2 {
@@ -283,16 +155,6 @@ a:focus {
     line-height: 2.5vw;
     font-weight: 500;
     color: #615757;
-}
-
-@media screen and (max-width: 500px) {
-    .hero-content-a h2 {
-        margin-top: 7%;
-        font-size: 3.5vw;
-        line-height: 7vw;
-        font-weight: 500;
-        color: #615757;
-    }
 }
 
 .hero-content button {
@@ -307,22 +169,8 @@ a:focus {
     border-radius: 5vw 5vw 0 5vw;
 }
 
-@media screen and (max-width: 500px) {
-    .hero-content button {
-        font-size: 3vw;
-        padding: 7% 10%;
-    }
-}
-
 .hero-content-b {
     width: 56%;
-}
-
-@media screen and (max-width: 500px) {
-    .hero-content-b {
-        width: 45%;
-        overflow: hidden;
-    }
 }
 
 .hero-content-b img {
@@ -330,16 +178,6 @@ a:focus {
     height: auto;
     margin-top: -20%;
     margin-left: 5%;
-}
-
-@media screen and (max-width: 500px) {
-    .hero-content-b img {
-        /* position: relative; */
-        width: 60vw;
-        height: auto;
-        margin-top: 10%;
-        margin-left: 0;
-    }
 }
 
 /* ----------------- services section styling --------------*/
