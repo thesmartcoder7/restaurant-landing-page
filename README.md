@@ -41,9 +41,9 @@ When you run the commands successfully, you should have a local version of this 
 
 Happy coding!
 
----
 
-## Check out the license [here](LICENSE)
+
+### Check out the license [here](LICENSE)
 
 ## Author Info
 
