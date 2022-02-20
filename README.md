@@ -43,6 +43,8 @@ Happy coding!
 
 ---
 
+## Check out the license [here](LICENSE)
+
 ## Author Info
 
 Name: Samuel Martins
