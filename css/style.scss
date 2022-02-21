@@ -632,6 +632,17 @@ a {
             img {
                 width: 5vw;
             }
+            p.logo-text {
+                display: inline;
+                color: $color_selective_yellow_approx;
+                font-weight: 800;
+                font-size: 2.7vw;
+                vertical-align: middle;
+                font-family: "Sansita Swashed";
+                .black {
+                    color: $black;
+                }
+            }
         }
     }
 }
@@ -649,9 +660,13 @@ a {
             font-weight: normal;
             padding: 5% 0;
             text-align: center;
-            a:hover {
-                border: none;
-                color: $color_selective_yellow_approx;
+            a {
+                text-decoration: none;
+                color: $black;
+                padding-bottom: 7%;
+                &:hover {
+                    color: $color_selective_yellow_approx;
+                }
             }
         }
     }
