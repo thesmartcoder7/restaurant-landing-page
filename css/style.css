@@ -81,6 +81,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
+    z-index: 5;
   }
 }
 
@@ -179,12 +181,49 @@ a:focus {
 
 @media (max-width: 500px) {
   .links {
-    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #f6b400;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .links ul {
   display: inline;
+}
+
+@media (max-width: 500px) {
+  .links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .links ul li {
@@ -194,6 +233,13 @@ a:focus {
   font-size: 1.3vw;
   text-transform: capitalize;
   margin: 0 2%;
+}
+
+@media (max-width: 500px) {
+  .links ul li {
+    font-size: 6vw;
+    margin: 10% 0;
+  }
 }
 
 .links ul li a {
@@ -215,8 +261,29 @@ a:focus {
   margin-right: 5%;
 }
 
+@media (max-width: 500px) {
+  .cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10% auto;
+  }
+}
+
 .cart .icon svg {
   width: 1.5vw;
+}
+
+@media (max-width: 500px) {
+  .cart .icon svg {
+    width: 5vw;
+  }
 }
 
 .badge {
@@ -228,6 +295,13 @@ a:focus {
   padding: 0.3vw 0.6vw;
   top: -40%;
   right: -60%;
+}
+
+@media (max-width: 500px) {
+  .badge {
+    font-size: 3vw;
+    padding: 1vw 2vw;
+  }
 }
 
 .hero-content {
