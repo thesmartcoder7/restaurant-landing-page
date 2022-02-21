@@ -47,6 +47,12 @@ body {
   padding: 1% 2%;
 }
 
+@media (max-width: 500px) {
+  #hero header {
+    padding: 5%;
+  }
+}
+
 #hero header nav {
   padding-top: 1%;
   display: -webkit-box;
@@ -64,8 +70,61 @@ body {
           align-items: center;
 }
 
-.logo-g {
+@media (max-width: 500px) {
+  #hero header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#hero header nav .logo-g {
   width: 20%;
+}
+
+#hero header nav .logo-g a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero header nav .logo-g a img {
+  vertical-align: middle;
+  width: 5vw;
+}
+
+@media (max-width: 500px) {
+  #hero header nav .logo-g a img {
+    width: 12vw;
+  }
+}
+
+#hero header nav .logo-g a p.logo-text {
+  display: inline;
+  color: #f6b400;
+  font-weight: 800;
+  font-size: 2.7vw;
+  vertical-align: middle;
+  font-family: "Sansita Swashed";
+}
+
+@media (max-width: 500px) {
+  #hero header nav .logo-g a p.logo-text {
+    font-size: 7vw;
+  }
+}
+
+#hero header nav .logo-g a p.logo-text .black {
+  color: black;
 }
 
 a.logo-link {
@@ -85,23 +144,66 @@ a:focus {
   border-bottom: none;
 }
 
+#check {
+  display: none;
+}
+
+.logo-link a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.menu-toggle svg {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .menu-toggle svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: auto;
+    width: 7vw;
+    height: 7vw;
+  }
+}
+
 .links {
   width: 80%;
   height: 100%;
   text-align: right;
 }
 
+@media (max-width: 500px) {
+  .links {
+    display: none;
+  }
+}
+
 .links ul {
   display: inline;
 }
 
-.links li {
+.links ul li {
   list-style-type: none;
   display: inline-block;
   font-weight: 700;
   font-size: 1.3vw;
   text-transform: capitalize;
   margin: 0 2%;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 7%;
+}
+
+.links ul li a:hover {
+  border-bottom: solid 0.5vw #ff6d20;
 }
 
 .cart {
@@ -126,10 +228,6 @@ a:focus {
   padding: 0.3vw 0.6vw;
   top: -40%;
   right: -60%;
-}
-
-#check {
-  display: none;
 }
 
 .hero-content {
@@ -615,42 +713,5 @@ footer span {
 
 .developer {
   text-align: right;
-}
-
-nav img {
-  vertical-align: middle;
-  width: 5vw;
-}
-
-p.logo-text {
-  display: inline;
-  color: #f6b400;
-  font-weight: 800;
-  font-size: 2.7vw;
-  vertical-align: middle;
-  font-family: "Sansita Swashed";
-}
-
-p.logo-text .black {
-  color: black;
-}
-
-li a {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 7%;
-}
-
-li a:hover {
-  border-bottom: solid 0.5vw #ff6d20;
-}
-
-.logo-link a:hover {
-  text-decoration: none;
-  border-bottom: none;
-}
-
-.menu-toggle svg {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */

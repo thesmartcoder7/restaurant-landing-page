@@ -77,18 +77,52 @@ body {
     header {
         height: 7%;
         padding: 1% 2%;
+        @include mobile {
+            padding: 5%;
+        }
         nav {
             padding-top: 1%;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
+            @include mobile {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .logo-g {
+                width: 20%;
+                a {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        vertical-align: middle;
+                        width: 5vw;
+                        @include mobile {
+                            width: 12vw;
+                        }
+                    }
+                    p.logo-text {
+                        display: inline;
+                        color: $color_selective_yellow_approx;
+                        font-weight: 800;
+                        font-size: 2.7vw;
+                        vertical-align: middle;
+                        font-family: "Sansita Swashed";
+                        @include mobile {
+                            font-size: 7vw;
+                        }
+                        .black {
+                            color: $black;
+                        }
+                    }
+                }
+            }
         }
     }
 }
-.logo-g {
-    width: 20%;
-}
+
 a {
     &.logo-link {
         text-decoration: none;
@@ -105,20 +139,51 @@ a {
         border-bottom: none;
     }
 }
+
+#check {
+    display: none;
+}
+
+.logo-link a:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+.menu-toggle svg {
+    display: none;
+    @include mobile {
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+        width: 7vw;
+        height: 7vw;
+    }
+}
+
 .links {
     width: 80%;
     height: 100%;
     text-align: right;
+    @include mobile {
+        display: none;
+    }
     ul {
         display: inline;
-    }
-    li {
-        list-style-type: none;
-        display: inline-block;
-        font-weight: 700;
-        font-size: 1.3vw;
-        text-transform: capitalize;
-        margin: 0 2%;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 1.3vw;
+            text-transform: capitalize;
+            margin: 0 2%;
+            a {
+                text-decoration: none;
+                color: $black;
+                padding-bottom: 7%;
+                &:hover {
+                    border-bottom: solid 0.5vw $color_orange_approx;
+                }
+            }
+        }
     }
 }
 .cart {
@@ -143,9 +208,7 @@ a {
     top: -40%;
     right: -60%;
 }
-#check {
-    display: none;
-}
+
 .hero-content {
     display: flex;
     height: auto;
@@ -537,34 +600,4 @@ footer {
 }
 .developer {
     text-align: right;
-}
-nav img {
-    vertical-align: middle;
-    width: 5vw;
-}
-p.logo-text {
-    display: inline;
-    color: $color_selective_yellow_approx;
-    font-weight: 800;
-    font-size: 2.7vw;
-    vertical-align: middle;
-    font-family: "Sansita Swashed";
-    .black {
-        color: $black;
-    }
-}
-li a {
-    text-decoration: none;
-    color: $black;
-    padding-bottom: 7%;
-    &:hover {
-        border-bottom: solid 0.5vw $color_orange_approx;
-    }
-}
-.logo-link a:hover {
-    text-decoration: none;
-    border-bottom: none;
-}
-.menu-toggle svg {
-    display: none;
 }
