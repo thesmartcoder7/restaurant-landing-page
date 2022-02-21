@@ -11,37 +11,37 @@ $color_dove_gray_approx: #666;
 $color_nobel_approx: #b4b0b0;
 
 @mixin mobile {
-    @media (max-width: 500px) {
+    @media screen and (max-width: 500px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: 501px) and (max-width: 768px) {
+    @media screen and (min-width: 501px) and (max-width: 768px) {
         @content;
     }
 }
 
 @mixin smalllaptop {
-    @media (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
         @content;
     }
 }
 
 @mixin laptop {
-    @media (min-width: 1025px) and (max-width: 1440px) {
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
         @content;
     }
 }
 
 /*@mixin widescreen CSS {
-    @media (min-width: 1441px) and (max-width: 1920px) {
+    @media screen and (min-width: 1441px) and (max-width: 1920px) {
         @content;
     }
 }*/
 
 @mixin ultrawide {
-    @media (min-width: 1921px) {
+    @media screen and (min-width: 1921px) {
         @content;
     }
 }

@@ -1,5 +1,5 @@
 /*@mixin widescreen CSS {
-    @media (min-width: 1441px) and (max-width: 1920px) {
+    @media screen and (min-width: 1441px) and (max-width: 1920px) {
         @content;
     }
 }*/
@@ -42,12 +42,18 @@ body {
   background-image: linear-gradient(101deg, #ffffff 50%, #f6b400 50.1%);
 }
 
+@media screen and (max-width: 500px) {
+  #hero {
+    height: 100vh;
+  }
+}
+
 #hero header {
   height: 7%;
   padding: 1% 2%;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   #hero header {
     padding: 5%;
   }
@@ -70,7 +76,7 @@ body {
           align-items: center;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   #hero header nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -90,6 +96,13 @@ body {
   width: 20%;
 }
 
+@media screen and (max-width: 500px) {
+  #hero header nav .logo-g {
+    position: relative;
+    z-index: 3;
+  }
+}
+
 #hero header nav .logo-g a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,7 +117,7 @@ body {
   width: 5vw;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   #hero header nav .logo-g a img {
     width: 12vw;
   }
@@ -119,7 +132,7 @@ body {
   font-family: "Sansita Swashed";
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   #hero header nav .logo-g a p.logo-text {
     font-size: 7vw;
   }
@@ -150,6 +163,31 @@ a:focus {
   display: none;
 }
 
+@media screen and (max-width: 500px) {
+  #check:checked ~ .links {
+    top: 0;
+    left: 0;
+  }
+  #check:checked ~ .logo-g {
+    position: fixed;
+    padding-top: 10.5%;
+  }
+  #check:checked ~ .logo-g a p.logo-text {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    color: #ff6d20;
+  }
+  #check:checked ~ .logo-g a p.logo-text .black {
+    color: black;
+  }
+  #check:checked ~ .menu-toggle {
+    margin-left: 83%;
+    position: fixed;
+    z-index: 6;
+    padding-top: 10.5%;
+  }
+}
+
 .logo-link a:hover {
   text-decoration: none;
   border-bottom: none;
@@ -159,7 +197,7 @@ a:focus {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .menu-toggle svg {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -170,6 +208,8 @@ a:focus {
     margin-left: auto;
     width: 7vw;
     height: 7vw;
+    position: relative;
+    z-index: 3;
   }
 }
 
@@ -179,13 +219,13 @@ a:focus {
   text-align: right;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .links {
     position: fixed;
     width: 100%;
     height: 100vh;
     top: 0;
-    left: 0;
+    left: 100%;
     z-index: 2;
     background-color: #f6b400;
     display: -webkit-box;
@@ -201,6 +241,8 @@ a:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
   }
 }
 
@@ -208,7 +250,7 @@ a:focus {
   display: inline;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .links ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -235,7 +277,7 @@ a:focus {
   margin: 0 2%;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .links ul li {
     font-size: 6vw;
     margin: 10% 0;
@@ -261,7 +303,7 @@ a:focus {
   margin-right: 5%;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .cart {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -280,7 +322,7 @@ a:focus {
   width: 1.5vw;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .cart .icon svg {
     width: 5vw;
   }
@@ -297,7 +339,7 @@ a:focus {
   right: -60%;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .badge {
     font-size: 3vw;
     padding: 1vw 2vw;
