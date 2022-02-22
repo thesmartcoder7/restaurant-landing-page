@@ -476,6 +476,13 @@ a:focus {
           justify-content: center;
 }
 
+@media screen and (max-width: 500px) {
+  #services {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .delivery {
   text-align: center;
   border: solid 0.15vw #550312;
@@ -486,9 +493,58 @@ a:focus {
   width: 40%;
 }
 
+@media screen and (max-width: 500px) {
+  .delivery {
+    width: 80%;
+    padding: 9% 5% 10% 5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .delivery svg {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .delivery h3 {
+    font-size: 6vw;
+  }
+}
+
 .delivery p {
   font-size: 1.1vw;
   line-height: 2vw;
+}
+
+@media screen and (max-width: 500px) {
+  .delivery p {
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .quality {
+    width: 80%;
+    padding: 9% 5% 10% 5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .quality svg {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .quality h3 {
+    font-size: 6vw;
+  }
 }
 
 .quality p {
@@ -496,9 +552,44 @@ a:focus {
   line-height: 2vw;
 }
 
+@media screen and (max-width: 500px) {
+  .quality p {
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tasty {
+    width: 80%;
+    padding: 9% 5% 10% 5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tasty svg {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tasty h3 {
+    font-size: 6vw;
+  }
+}
+
 .tasty p {
   font-size: 1.1vw;
   line-height: 2vw;
+}
+
+@media screen and (max-width: 500px) {
+  .tasty p {
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
 }
 
 #menu {

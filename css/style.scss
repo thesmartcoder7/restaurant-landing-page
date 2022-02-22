@@ -366,12 +366,18 @@ a {
         }
     }
 }
+
+// - - - - - services section styling
 #services {
     background-color: $color_feta_approx;
     display: flex;
     padding: 10% 5%;
     justify-content: center;
+    @include mobile {
+        flex-wrap: wrap;
+    }
 }
+
 .delivery {
     text-align: center;
     border: solid 0.15vw $color_rosewood_approx;
@@ -381,41 +387,89 @@ a {
     margin: 0 2%;
     height: auto;
     width: 40%;
+    @include mobile {
+        width: 80%;
+        padding: 9% 5% 10% 5%;
+        margin-bottom: 10%;
+    }
     svg {
         @extend %extend_3;
+        @include mobile {
+            width: 15vw;
+            height: 15vw;
+        }
     }
     h3 {
         @extend %extend_4;
+        @include mobile {
+            font-size: 6vw;
+        }
     }
     p {
         font-size: 1.1vw;
         line-height: 2vw;
+        @include mobile {
+            font-size: 3.5vw;
+            line-height: 6vw;
+        }
     }
 }
 .quality {
     @extend %extend_2;
+    @include mobile {
+        width: 80%;
+        padding: 9% 5% 10% 5%;
+        margin-bottom: 10%;
+    }
     svg {
         @extend %extend_3;
+        @include mobile {
+            width: 15vw;
+            height: 15vw;
+        }
     }
     h3 {
         @extend %extend_4;
+        @include mobile {
+            font-size: 6vw;
+        }
     }
     p {
         font-size: 1.1vw;
         line-height: 2vw;
+        @include mobile {
+            font-size: 3.5vw;
+            line-height: 6vw;
+        }
     }
 }
 .tasty {
     @extend %extend_2;
+    @include mobile {
+        width: 80%;
+        padding: 9% 5% 10% 5%;
+        margin-bottom: 10%;
+    }
     svg {
         @extend %extend_3;
+        @include mobile {
+            width: 15vw;
+            height: 15vw;
+        }
     }
     h3 {
         @extend %extend_4;
+        @include mobile {
+            font-size: 6vw;
+        }
     }
     p {
         font-size: 1.1vw;
         line-height: 2vw;
+        @include mobile {
+            font-size: 3.5vw;
+            line-height: 6vw;
+        }
     }
 }
 #menu {
