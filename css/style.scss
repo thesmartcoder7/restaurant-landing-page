@@ -523,7 +523,7 @@ a {
     text-align: center;
     overflow: hidden;
     @include mobile {
-        width: 80%;
+        width: 90%;
         padding: 10%;
         margin-top: 10%;
         border-radius: 5vw;
@@ -545,6 +545,7 @@ a {
         @include mobile {
             font-size: 3vw;
             margin-top: -7%;
+            margin-left: 45%;
         }
     }
     img {
@@ -589,7 +590,7 @@ a {
             //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
             border-radius: 1vw;
             @include mobile {
-                width: 13vw;
+                width: 14vw;
             }
         }
         .add-to-cart {
@@ -614,14 +615,25 @@ a {
     background-color: $color_feta_approx;
     display: flex;
     padding: 10% 6%;
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+    }
 }
 .info {
     width: 50%;
+    @include mobile {
+        width: 100%;
+    }
     h3 {
         font-size: 5vw;
         font-weight: 900;
         text-transform: capitalize;
         color: $color_selective_yellow_approx;
+        @include mobile {
+            font-size: 7vw;
+        }
         .black {
             color: $black;
         }
@@ -630,6 +642,9 @@ a {
         color: $color_dorado_approx;
         font-size: 1.7vw;
         font-weight: 500;
+        @include mobile {
+            font-size: 3.5vw;
+        }
     }
     .controls {
         display: flex;
@@ -637,6 +652,9 @@ a {
         font-size: 6vw;
         color: $color_silver_approx;
         align-self: center;
+        @include mobile {
+            font-size: 10vw;
+        }
         .first {
             color: $color_orange_approx;
             padding: 2%;
@@ -654,6 +672,9 @@ a {
             //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
             transform: rotate(-45deg);
             margin-top: 3%;
+            @include mobile {
+                font-size: 8vw;
+            }
         }
     }
 }
@@ -662,13 +683,26 @@ a {
     position: relative;
     display: flex;
     align-items: flex-end;
+    @include mobile {
+        width: 100%;
+        justify-content: flex-end;
+    }
     .front {
         width: 30vw;
         position: absolute;
         margin-bottom: -10%;
+        @include mobile {
+            width: 50vw;
+            margin-bottom: 0%;
+        }
     }
     .back {
         width: 40vw;
+        @include mobile {
+            width: 70vw;
+            margin-top: -20%;
+            margin-right: -20%;
+        }
     }
 }
 #cta {
