@@ -709,12 +709,27 @@ a {
     background-color: $color_selective_yellow_approx;
     display: flex;
     padding: 10% 5%;
+    @include mobile {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     .platform {
         padding: 5% 5% 5% 0;
         width: 45%;
+        @include mobile {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         h3 {
             font-size: 3.5vw;
             font-weight: 700;
+            @include mobile {
+                font-size: 7vw;
+            }
         }
         .apple-android {
             display: flex;
@@ -724,6 +739,11 @@ a {
                 padding: 0 3%;
                 margin-left: -3%;
                 cursor: pointer;
+                @include mobile {
+                    width: 30vw;
+                    margin-left: 0%;
+                    padding: 5%;
+                }
             }
         }
     }
@@ -731,6 +751,10 @@ a {
         width: 55%;
         display: flex;
         justify-content: space-around;
+        @include mobile {
+            width: 100%;
+            justify-content: space-evenly;
+        }
         img {
             background-color: $white;
             width: 20vw;
@@ -740,6 +764,10 @@ a {
             outline: none;
             //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
             box-shadow: -1vw 1vw 1vw $black_20;
+            @include mobile {
+                width: 30vw;
+                border-radius: 3.8vw;
+            }
         }
     }
 }
