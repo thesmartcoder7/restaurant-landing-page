@@ -606,6 +606,12 @@ a:focus {
   color: #f6b400;
 }
 
+@media screen and (max-width: 500px) {
+  #menu .title h3 {
+    font-size: 6vw;
+  }
+}
+
 #menu .title h3 span {
   color: black;
 }
@@ -619,6 +625,12 @@ a:focus {
   margin-top: 2%;
   width: 8%;
   height: 0.7vw;
+}
+
+@media screen and (max-width: 500px) {
+  #menu hr {
+    width: 15%;
+  }
 }
 
 .cards {
@@ -645,6 +657,15 @@ a:focus {
   overflow: hidden;
 }
 
+@media screen and (max-width: 500px) {
+  .card {
+    width: 80%;
+    padding: 10%;
+    margin-top: 10%;
+    border-radius: 5vw;
+  }
+}
+
 .card .ribbon {
   font-weight: bold;
   font-size: 1.1vw;
@@ -661,8 +682,21 @@ a:focus {
   color: #ffffff;
 }
 
+@media screen and (max-width: 500px) {
+  .card .ribbon {
+    font-size: 3vw;
+    margin-top: -7%;
+  }
+}
+
 .card img {
   width: 20vw;
+}
+
+@media screen and (max-width: 500px) {
+  .card img {
+    width: 50vw;
+  }
 }
 
 .card h3 {
@@ -671,9 +705,22 @@ a:focus {
   font-size: 2vw;
 }
 
+@media screen and (max-width: 500px) {
+  .card h3 {
+    font-size: 5vw;
+  }
+}
+
 .card p {
   font-size: 1vw;
   line-height: 1.8vw;
+}
+
+@media screen and (max-width: 500px) {
+  .card p {
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
 }
 
 .card div {
@@ -695,11 +742,23 @@ a:focus {
   padding-left: 2%;
 }
 
+@media screen and (max-width: 500px) {
+  .card div .price {
+    font-size: 4.5vw;
+  }
+}
+
 .card div .icon {
   width: 5.5vw;
   background-color: #e1ebe6;
   padding: 1.5% 7%;
   border-radius: 1vw;
+}
+
+@media screen and (max-width: 500px) {
+  .card div .icon {
+    width: 13vw;
+  }
 }
 
 .card div .add-to-cart {
@@ -709,6 +768,12 @@ a:focus {
   padding: 4% 7%;
   border-radius: 1vw;
   color: #5d9676;
+}
+
+@media screen and (max-width: 500px) {
+  .card div .add-to-cart {
+    font-size: 4vw;
+  }
 }
 
 .card div .add-to-cart .quantity {

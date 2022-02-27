@@ -482,6 +482,9 @@ a {
             text-transform: capitalize;
             font-size: 2.5vw;
             color: $color_selective_yellow_approx;
+            @include mobile {
+                font-size: 6vw;
+            }
             span {
                 color: $black;
             }
@@ -496,6 +499,9 @@ a {
         margin-top: 2%;
         width: 8%;
         height: 0.7vw;
+        @include mobile {
+            width: 15%;
+        }
     }
 }
 .cards {
@@ -516,6 +522,12 @@ a {
     margin-top: 5%;
     text-align: center;
     overflow: hidden;
+    @include mobile {
+        width: 80%;
+        padding: 10%;
+        margin-top: 10%;
+        border-radius: 5vw;
+    }
     .ribbon {
         font-weight: bold;
         font-size: 1.1vw;
@@ -530,18 +542,32 @@ a {
         margin-top: -3%;
         margin-left: 48%;
         color: $white;
+        @include mobile {
+            font-size: 3vw;
+            margin-top: -7%;
+        }
     }
     img {
         width: 20vw;
+        @include mobile {
+            width: 50vw;
+        }
     }
     h3 {
         text-transform: uppercase;
         color: $color_rosewood_approx;
         font-size: 2vw;
+        @include mobile {
+            font-size: 5vw;
+        }
     }
     p {
         font-size: 1vw;
         line-height: 1.8vw;
+        @include mobile {
+            font-size: 3.5vw;
+            line-height: 6vw;
+        }
     }
     div {
         padding: 7% 2%;
@@ -552,6 +578,9 @@ a {
             font-size: 1.5vw;
             font-weight: 700;
             padding-left: 2%;
+            @include mobile {
+                font-size: 4.5vw;
+            }
         }
         .icon {
             width: 5.5vw;
@@ -559,6 +588,9 @@ a {
             padding: 1.5% 7%;
             //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
             border-radius: 1vw;
+            @include mobile {
+                width: 13vw;
+            }
         }
         .add-to-cart {
             font-size: 1.5vw;
@@ -568,6 +600,9 @@ a {
             //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
             border-radius: 1vw;
             color: $color_viridian_green_approx;
+            @include mobile {
+                font-size: 4vw;
+            }
             .quantity {
                 color: $black;
                 font-weight: 700;
