@@ -1198,6 +1198,9 @@ form .form-button {
   color: #ffffff;
   padding: 2.8% 6%;
   font-size: 1vw;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
   border-radius: 0 0.5vw 0.5vw 0;
 }
